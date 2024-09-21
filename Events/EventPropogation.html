@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chartreuse;
+        }
+        #parent{
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(85, 0, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        #child{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(17, 255, 0);
+            justify-content: center;
+            align-items: center;
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1TagOne " onclick="fun1()"
+     onclick="fun2()" >Web Technology</h1>
+     <!-- <h1 id="h1TagOne " onclick="fun1()">Web Technology</h1> -->
+
+    <div id="grandparent">
+    <div id="parent">
+    <div id="child">
+
+    </div>
+</div>
+</div>
+    <script src="./EventPropogation.js"></script>
+</body>
+</html>
